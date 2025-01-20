@@ -1,10 +1,10 @@
-#Contribution Guideline
+# Contribution Guidelines
 
-The contribution will be a PULL REQUEST
+The contribution will be as a PULL REQUEST
 
 <pre>##STEP 1: Check the ISSUE tab on the GitHub repo to find an issue to work on </pre>
 
-<pre>##STEP 2: FORK the repo URL from your GitHub account - https://github.com/Joseph-Brendan/Axon-UI</pre>
+<pre>##STEP 2: FORK the repo  - https://github.com/Joseph-Brendan/Axon-UI   to your github account </pre> 
 
 <pre>##STEP 3: CLONE the forked repo to your local machine using the following command - 
     `git clone https://github.com/your-github-username/Axon-UI.git`</pre>
