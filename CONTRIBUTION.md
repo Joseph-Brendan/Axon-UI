@@ -1,6 +1,6 @@
-#Contribution Guideline
+# Contribution Guidelines
 
-The contribution will be a PULL REQUEST
+The contribution will be as a PULL REQUEST
 
 <pre>##STEP 1: Check the ISSUE tab on the GitHub repo to find an issue to work on </pre>
 
