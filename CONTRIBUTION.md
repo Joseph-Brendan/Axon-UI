@@ -73,7 +73,6 @@ git push origin [branch-name]
 Submit a PULL REQUEST against the main branch of the original repository and wait for your code to be reviewed and merged.
 
 
-If you're not used to this workflow with git, you can start with some basic [docs from GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
 # How to make a Pull Request 
 Watch this [video](https://www.loom.com/share/eabcaed644b54b0ea7040c7ac27c40a9?sid=2c17e302-ce7d-40c2-a9d4-ef9f09281609) to see how to make a pull request 
