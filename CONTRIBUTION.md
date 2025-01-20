@@ -1,15 +1,29 @@
 # Contribution Guidelines
 
-The contribution will be as a PULL REQUEST
+Follow these steps to contribute to the Axon-UI project:
 
-<pre>##STEP 1: Check the ISSUE tab on the GitHub repo to find an issue to work on </pre>
+---
 
-<pre>##STEP 2: FORK the repo  - https://github.com/Joseph-Brendan/Axon-UI   to your github account </pre> 
+## STEP 1: Check the ISSUE Tab
+Visit the [ISSUE tab](https://github.com/Joseph-Brendan/Axon-UI/issues) on the GitHub repository to find an issue to work on.
 
-<pre>##STEP 3: CLONE the forked repo to your local machine using the following command - 
-    `git clone https://github.com/your-github-username/Axon-UI.git`</pre>
+---
 
-<pre>##STEP 4: Sync the fork to avoid merge conflict by using the following command - 
+## STEP 2: Fork the Repository
+Fork the repository to your GitHub account:
+- Repository URL: [Axon-UI](https://github.com/Joseph-Brendan/Axon-UI)
+
+---
+
+## STEP 3: Clone the Forked Repository
+Clone the forked repository to your local machine:
+```
+git clone https://github.com/your-github-username/Axon-UI.git
+```
+
+## STEP 4: Sync the Fork
+
+To avoid merge conflicts, sync your fork with the main repository:
     ```
     
     git remote add upstream https://github.com/Joseph-Brendan/Axon-UI
@@ -18,43 +32,53 @@ The contribution will be as a PULL REQUEST
 
     git pull upstream main
     ```
-</pre>
 
-<pre>
-##STEP 5: Create a new branch with component name using the following command 
+## STEP 5: Create a New Branch
     
-    `git checkout -b [component-group/component-name]`. 
+    ```
+    git checkout -b [component-group/component-name]
+    ```
     
-    Example: git checkout -b basic-component/button 
-</pre>
+    ```
+    Example: git checkout -b basic-component/button
+    ```
 
-<pre>
- ##STEP 6: Write your code in the appropriate component folder   
-</pre>
 
-<pre>
-##STEP 7: Add and commit changes made to your branch using the following command
+## STEP 6: Write Your Code
+Write your code in the appropriate component folder.
 
-    git add . 
-    
-    git commit -m "short description of changes made" 
-    
+## STEP 7: Add and Commit Changes
+Stage and commit your changes using the following commands:
+```
+git add .
+git commit -m "short description of changes made"
+```
+```
     Example 1: git commit -m "changed the color of the button"
 
-    Example 2: - git commit -m "created form component/date picker" 
-</pre>
+    Example 2: - git commit -m "created form component/date picker"
+```
 
-<pre>
-##STEP 8: Push the changes to the forked repo using the following command
+
+
+## STEP 8: Push the Changes
+Push your changes to your forked repository:
+
+```
+git push origin [branch-name]
+```
+
     
-    `git push origin [branch-name]`
-</pre>
-    
-<pre>
-##STEP 9: Submit a PULL REQUEST against the master branch and wait for the code to be reviewed and merged.
+## STEP 9: Submit a Pull Request
+Submit a PULL REQUEST against the main branch of the original repository and wait for your code to be reviewed and merged.
+
 
 If you're not used to this workflow with git, you can start with some basic [docs from GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
-</pre>
+
+# How to make a Pull Request 
+Watch this [video](https://www.loom.com/share/eabcaed644b54b0ea7040c7ac27c40a9?sid=2c17e302-ce7d-40c2-a9d4-ef9f09281609) to see how to make a pull request 
+
+
 
 
 
