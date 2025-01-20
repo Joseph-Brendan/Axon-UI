@@ -7,7 +7,7 @@ The contribution will be a PULL REQUEST
 <pre>##STEP 2: FORK the repo URL from your GitHub account - https://github.com/Joseph-Brendan/Axon-UI</pre>
 
 <pre>##STEP 3: CLONE the forked repo to your local machine using the following command - 
-    `git clone https://github.com/<your-github-username>/Axon-UI.git`</pre>
+    `git clone https://github.com/your-github-username/Axon-UI.git`</pre>
 
 <pre>##STEP 4: Sync the fork to avoid merge conflict by using the following command - 
     ```
@@ -23,7 +23,7 @@ The contribution will be a PULL REQUEST
 <pre>
 ##STEP 5: Create a new branch with component name using the following command 
     
-    `git checkout -b <component-group/component-name>`. 
+    `git checkout -b [component-group/component-name]`. 
     
     Example: git checkout -b basic-component/button 
 </pre>
@@ -47,7 +47,7 @@ The contribution will be a PULL REQUEST
 <pre>
 ##STEP 8: Push the changes to the forked repo using the following command
     
-    `git push origin <branch-name>`
+    `git push origin [branch-name]`
 </pre>
     
 <pre>
@@ -57,5 +57,4 @@ If you're not used to this workflow with git, you can start with some basic [doc
 </pre>
 
 
-#MAKING A PULL REQUEST (WITH SCREENSHOTS)
 
