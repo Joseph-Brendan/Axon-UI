@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  return <div>app</div>;
+  return <div>App</div>;
 }
 
 export default App;
