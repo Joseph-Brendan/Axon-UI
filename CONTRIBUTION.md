@@ -2,20 +2,26 @@
 
 Follow these steps to contribute to the Axon-UI project:
 
+---
 
-## STEP 1: Fork the Repository
+## STEP 1: Check the ISSUE Tab
+Visit the [ISSUE tab](https://github.com/Joseph-Brendan/Axon-UI/issues) on the GitHub repository to find an issue to work on.
+
+---
+
+## STEP 2: Fork the Repository
 Fork the repository to your GitHub account:
 - Repository URL: [Axon-UI](https://github.com/Joseph-Brendan/Axon-UI)
 
 ---
 
-## STEP 2: Clone the Forked Repository
+## STEP 3: Clone the Forked Repository
 Clone the forked repository to your local machine:
 ```
 git clone https://github.com/your-github-username/Axon-UI.git
 ```
 
-## STEP 3: Sync the Fork
+## STEP 4: Sync the Fork
 
 To avoid merge conflicts, sync your fork with the main repository:
     ```
@@ -27,7 +33,7 @@ To avoid merge conflicts, sync your fork with the main repository:
     git pull upstream main
     ```
 
-## STEP 4: Create a New Branch
+## STEP 5: Create a New Branch
     
     ```
     git checkout -b [component-group/component-name]
@@ -38,10 +44,10 @@ To avoid merge conflicts, sync your fork with the main repository:
     ```
 
 
-## STEP 5: Write Your Code
+## STEP 6: Write Your Code
 Write your code in the appropriate component folder.
 
-## STEP 6: Add and Commit Changes
+## STEP 7: Add and Commit Changes
 Stage and commit your changes using the following commands:
 ```
 git add .
@@ -55,7 +61,7 @@ git commit -m "short description of changes made"
 
 
 
-## STEP 7: Push the Changes
+## STEP 8: Push the Changes
 Push your changes to your forked repository:
 
 ```
@@ -63,7 +69,7 @@ git push origin [branch-name]
 ```
 
     
-## STEP 8: Submit a Pull Request
+## STEP 9: Submit a Pull Request
 Submit a PULL REQUEST against the main branch of the original repository and wait for your code to be reviewed and merged.
 
 
