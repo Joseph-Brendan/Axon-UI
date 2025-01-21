@@ -1,3 +1,160 @@
-
-
 /* css variables should be created here */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+
+:root {
+  --button-primary-bg: #3f3f42;
+  --button-primary-hover-bg: #2d2d2f;
+  --button-primary-pressed-bg: #1a1a1c;
+
+  --button-secondary-bg: #ececec;
+  --button-secondary-hover-bg: #cbced2;
+  --button-secondary-pressed-bg: #3f3f42;
+
+  --button-primary-outline: #3f3f42;
+  --button-primary-outline-hover-bg: #ececec;
+  --button-primary-outline-pressed-bg: #7e7e80;
+
+  --button-primary-text: #fff;
+  --button-light-text: #79818b;
+  --button-secondary-text: #1e1f20;
+  --text-primary-black: #25292e;
+  --text-secondary-black: #79818b;
+  --sutface-primary: #fff;
+  --button-text-secondary: #3f3f42;
+
+  --disabled-label-text: #f7f8f9;
+  --disabled-outline: #b2b6bc;
+  --disabled-bg: #f7f8f9;
+  --disabled-input-text: #b2b6bc;
+  --default-outline-input: #8f959e;
+  --input-placeholder: #b2b6bc;
+  --filled-text: #232324;
+
+  --error-state: #e13654;
+  --error-primary-container: #fbe6ea;
+  --success-state: #393;
+  --success-primary-container: #e6f2e6;
+  --error-in-primary-container: #770217;
+  --success-in-primary-container: #004600;
+  --warning-state: #ffc233;
+  --warning-primary-container: #fff7e6;
+  --warning-in-primary-container: #8c6200;
+
+  --icon-default-color: #3e454e;
+  --icon-hover-color: #79818b;
+  --icon-disabled-color: #cbced2;
+
+  --border-thin: #eeeff1;
+  --border-light: #cbced2;
+  --border-medium: #b2b6bc;
+  --border-bold: #8f959e;
+
+  --checkbox-hover: #eeeff1;
+  --checkbox-focused: #cbced2;
+
+  /* Radius */
+  --radius-xxs: 0.25rem;
+  --radius-xs: 0.50rem;
+  --radius-s: 0.75rem;
+  --radius-m: 1rem;
+  --radius-l: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  /* Spacing */
+  --spacing-none: 0;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.50rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.25rem;
+  --spacing-xl: 1.50rem;
+  --spacing-2xl: 1.75rem;
+  --spacing-3xl: 2rem;
+
+  /* Typography */
+  /* Heading Text */
+  --heading-1-font-size: 3.25rem;
+  --heading-2-font-size: 3rem;
+  --heading-3-font-size: 2.75rem;
+  --heading-4-font-size: 2.5rem;
+  --heading-5-font-size: 2rem;
+  --heading-6-font-size: 1.50rem;
+  --heading-7-font-size: 1.25rem;
+
+  /* SubTitle Text */
+  --subtitle-1-font-size: 1.12rem;
+  --subtitle-2-font-size: 1rem;
+  --subtitle-3-font-size: 0.875rem;
+
+  /* Body Text */
+  --body-1-font-size: 1rem;
+  --body-2-font-size: 0.875rem;
+
+  /* Button Text */
+  --button-font-size: 1rem;
+  --button-S-font-size: 0.875rem;
+
+  /* Caption Text */
+  --caption1-font-size: 0.75rem;
+  --caption2-font-size: 0.625rem;
+
+
+/* Heading line heights */
+  --heading-1-line-height: 4rem;
+  --heading-2-line-height: 3.75rem;
+  --heading-3-line-height: 3.5rem;
+  --heading-4-line-height: 3.25rem;
+  --heading-5-line-height: 2.5rem;
+  --heading-6-line-height: 2rem;
+  --heading-7-line-height: 1.50rem;
+
+  /* Subtitle line height */
+  --subtitle-1-line-height: 1.625rem;
+  --subtitle-2-line-height: 1.50rem;
+  --subtitle-3-line-height: 1.50rem
+
+  /* Body line height */
+  --body-1-line-height: 1.50rem;
+  --body-2-line-height: 1.25rem;
+
+  /* Button line height */
+  --button-line-height: 1rem;
+  --button-s-line-height: 1rem;
+
+  /* Caption line height */
+  --caption-line-height: 1.25rem;
+  --caption-2-line-height: 1rem;
+
+
+  /* Letter-spacing */
+  --heading-1-letter-spacing: -2;
+  --heading-2-letter-spacing: -2;
+  --heading-3-letter-spacing: -2;
+  --heading-4-letter-spacing: -2;
+  --heading-5-letter-spacing: 0;
+  --heading-6-letter-spacing: 0;
+  --heading-7-letter-spacing: 0;
+
+  --subtitle-letter-spacing: 0;
+  --body-letter-spacing: 0;
+  --button-letter-spacing: 0;
+  --caption-letter-spacing: 0;
+
+
+/* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
+
+
