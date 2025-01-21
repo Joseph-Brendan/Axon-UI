@@ -26,7 +26,6 @@
 
 ## Technologies
 
-### Frontend Technologies
 
 | Technology         | Version | Use                  |
 | ------------------ | ------- | -------------------- |
