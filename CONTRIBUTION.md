@@ -25,9 +25,9 @@ To avoid merge conflicts, sync your fork with the main repository:
     
     git remote add upstream https://github.com/Joseph-Brendan/Axon-UI
 
-    git fetch upstream
-
-    git pull upstream main
+    git fetch upstream development
+ 
+    git pull upstream development
     ```
 
 ## STEP 4: Create a New Branch
@@ -67,12 +67,12 @@ git push origin [branch-name]
 
     
 ## STEP 8: Submit a Pull Request
-Submit a PULL REQUEST against the main branch of the original repository and wait for your code to be reviewed and merged.
+Submit a PULL REQUEST against the **development** branch of the original repository and wait for your code to be reviewed and merged.
 
 
 
 # How to make a Pull Request 
-Watch this [video](https://www.loom.com/share/eabcaed644b54b0ea7040c7ac27c40a9?sid=2c17e302-ce7d-40c2-a9d4-ef9f09281609) to see how to make a pull request 
+Watch this [video](#) to see how to make a pull request against the **development branch** of the original repository 
 
 
 
