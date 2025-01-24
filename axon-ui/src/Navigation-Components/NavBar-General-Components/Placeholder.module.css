@@ -1,0 +1,13 @@
+.placeholdertxt{
+    width: fit-content;
+    height: auto;
+    color: var(--text-primary-black);
+    font-size: var(--body-1-font-size);
+    font-weight: var(--font-weight-semi-bold);
+    line-height: var(--caption-line-height);
+    cursor: pointer;
+}
+
+.placeholdertxt:hover{
+    color: var(--text-secondary-black);
+}

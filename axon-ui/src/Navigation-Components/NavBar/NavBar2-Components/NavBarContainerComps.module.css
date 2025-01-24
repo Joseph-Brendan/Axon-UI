@@ -1,4 +1,5 @@
-.NavBarMainCont{
+/* This is the page for the navbar 1 css */
+.NavbarMainContainer{
     padding: var(--spacing-3xl);
     width: var(100%);
     height: auto;
@@ -8,31 +9,35 @@
     align-items: center;
 }
 
-.NavBarTxtBtnCont{
-    width: fit-content;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    column-gap: var(--spacing-2xl);
-    justify-content: start;
-    align-items: center;
-}
-
-.NavBarTxtCont{
-    width: 562px;
+.LogoNavTxtContainer{
+    width: 856px;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: var(--spacing-none);
 }
 
-.NavBarBtnCont{
+.logoContainer{
     width: fit-content;
+    height: auto;
+}
+
+.navTxt{
+    width: 562px;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: start;
     align-items: center;
-    column-gap: var(--spacing-xxs);
+    column-gap: var(--spacing-3xl);
+    flex-shrink: var(--spacing-none);
+}
+
+.btnContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    column-gap: var(--spacing-xs);
 }
