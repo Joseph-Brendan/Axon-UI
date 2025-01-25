@@ -1,0 +1,24 @@
+.NavBarMainCont{
+    padding: var(--spacing-3xl);
+    width: var(100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.NavBar3TxtCont{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: var(--spacing-3xl);
+}
+
+.NavBar3SearchCont{
+    width: fit-content;
+    height: auto;
+}
