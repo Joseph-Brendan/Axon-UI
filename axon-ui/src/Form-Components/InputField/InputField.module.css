@@ -1,0 +1,9 @@
+.label {
+  color: var(--text-primary-black);
+}
+
+.input {
+  border: transparent;
+  outline: transparent;
+  background: transparent;
+}
