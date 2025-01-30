@@ -1,9 +1,28 @@
 .label {
   color: var(--text-primary-black);
+  font-size: var(--subtitle-3-font-size);
+  font-weight: var(--font-weight-medium);
 }
 
 .input {
   border: transparent;
   outline: transparent;
-  background: transparent;
+  background-color: transparent;
+}
+
+.inputWrapper {
+  width: 100%;
+  border: 1px solid var(--disabled-outline);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.inputField {
+  margin: 3rem auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 0.25rem;
 }

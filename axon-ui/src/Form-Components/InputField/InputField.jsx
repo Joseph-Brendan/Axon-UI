@@ -1,40 +1,19 @@
-import PropTypes from "prop-types";
 import styles from "./InputField.module.css";
+import PropTypes from "prop-types";
+import FieldLabel from "./FieldLabel";
+import Input from "./Input";
 
-export default function InputField({
-  label,
-  id,
-  iconRight,
-  iconLeft,
-  border = "1px solid #8f959e",
-  placeholder = "input text",
-  type = "text",
-  background,
-  className,
-}) {
+export default function InputField({ inputFieldClassName }) {
+  const inputFieldStyle = styles.inputField;
   return (
-    <div>
-      <div className={className}>
-        <label htmlFor={id} className={styles.label}>
-          {label}
-        </label>
-        <input
-          style={{ ...background, border }}
-          type={type}
-          placeholder={placeholder}
-        />
-      </div>
+    <div className={inputFieldClassName || `${inputFieldStyle}`}>
+      <FieldLabel labelText="label" />
+      <Input />
+      <FieldLabel labelText="hint text" />
     </div>
   );
 }
 
 InputField.propTypes = {
-  label: PropTypes.string,
-  id: PropTypes.string,
-  iconLeft: PropTypes.string,
-  iconRight: PropTypes.string,
-  border: PropTypes.string,
-  placeholder: PropTypes.string,
-  type: PropTypes.string,
-  background: PropTypes.string,
+  inputFieldClassName: PropTypes.string,
 };
