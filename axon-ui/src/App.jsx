@@ -68,7 +68,7 @@ function App() {
         {/* Tooltip Demo */}
         <div>
           <h2>Tooltip Component</h2>
-          <Tooltip content = 'This is a top tooltip' position="top">
+          <Tooltip content = 'This is a top tooltip' position="top" delay={100}>
             <button>Hover over me</button>
           </Tooltip>
         </div>

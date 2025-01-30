@@ -34,6 +34,7 @@ export default function Modal({ isOpen, onClose, children, title, footer }) {
         // Add the class overlayVisible when the modal is open
         className={`${styles.overlay} ${isOpen ? styles.overlayVisible : ''}`} 
         ref={overlayRef} 
+        role='modal'
         onClick={handleOverlayClick}
     >
         <div className={styles.modal}>
