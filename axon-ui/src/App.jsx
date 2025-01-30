@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Modal from "./Feedback component/Modal/Modal";
 import Snackbar from "./Feedback component/Snackbar/Snackbar";
 import Tooltip from "./Feedback component/Tooltip/Tooltip";
+import "./feedback.css"
 import { Determinate, Intermediate, Skeleton, TextLoader } from "./Feedback component/Loaders/Loaders";
 
 // import InputField from "./Form-Components/InputField/InputField.jsx";
@@ -29,93 +30,140 @@ function App() {
         /> */}
       {/* <InputField label="Label" /> */}
 
-      {/* Feedback Component */}
-      <div>
-        <h1>Feedback Component</h1>
-
-        {/* Modal Demo */}
-        <div>
-          <h2>Modal Component</h2>
-          <button onClick={() => setIsModalOpen(true)}>Open Modal</button>
-        </div>
-
-        <Modal
-        isOpen={isModalOpen}
-        title = 'Example Modal'
-        onClose={() => setIsModalOpen(false)}
-        footer={<button onClick={() => setIsModalOpen(false)}>Close</button>}
-        >
-          <p>This is an example modal with customizable content and footer. You can add any content here!</p>
-        </Modal>
-
-        {/* Snackbar Demo */}
-        <div>
-          <h2>Snackbar Component</h2>
-          <button onClick={() => setIsModalOpen(true)}>Show Snackbar</button>
-        </div>
-
-        <Snackbar 
-        isOpen={isSnackbarOpen}
-        onClose={() => setIsSnackbarOpen(false)}
-        message = 'This is a snackbar message!'
-        variant="info"
-        action = {{
-          label: 'Dismiss',
-          onClick: () => setIsSnackbarOpen(false)
-        }}
-        />
-
-        {/* Tooltip Demo */}
-        <div>
-          <h2>Tooltip Component</h2>
-          <Tooltip content = 'This is a top tooltip' position="top" delay={100}>
-            <button>Hover over me</button>
-          </Tooltip>
-        </div>
-
-
-        {/* Loaders Demo */}
-        <div>
-          <h1>Loader Components</h1>
-
-          {/* Determinate Loader */}
-          <div>
-            <h1>Determinate Loader</h1>
-            <div>
-              <Determinate variant="linear" progress={progress} />
+    <div className="app">
+      <div className="container">
+        <h1 className="title">Feedback Components</h1>
+        
+        {/* Loaders Section */}
+        <section className="section">
+          <h2 className="section-title">Loader Components</h2>
+          
+          <div className="loaders-grid">
+            {/* Linear Determinate Loader */}
+            <div className="loader-item">
+              <h3 className="component-title">Linear Determinate Progress</h3>
+              <div className="loader-container">
+                <Determinate progress={progress} variant="linear" />
+              </div>
             </div>
-          </div>
 
-          {/* Intermediate Loader */}
-          <div>
-            <h1>Intermediate Loader</h1>
-            <div>
-              <Intermediate variant="circular" />
+            {/* Circular Determinate Loader */}
+            <div className="loader-item">
+              <h3 className="component-title">Circular Determinate Progress</h3>
+              <div className="loader-container">
+                <Determinate progress={progress} variant="circular" />
+              </div>
             </div>
-          </div>
 
-          {/* Skeleton Loader */}
-          <div>
-            <h1>Skeleton Loader</h1>
-            <Skeleton variant="text" />
-            <Skeleton variant="text" width = '60%' />
-            <div>
-              <Skeleton variant="circular" width={40} height={40} />
-              <div>
-                <Skeleton variant="text" />
-                <Skeleton variant="text" width = '60%' />
+            {/* Linear Intermediate Loader */}
+            <div className="loader-item">
+              <h3 className="component-title">Linear Indeterminate</h3>
+              <div className="loader-container">
+                <Intermediate variant="linear" />
+              </div>
+            </div>
+
+            {/* Circular Intermediate Loader */}
+            <div className="loader-item">
+              <h3 className="component-title">Circular Indeterminate</h3>
+              <div className="loader-container">
+                <Intermediate variant="circular" />
               </div>
             </div>
           </div>
+        </section>
 
-          {/* Text Loader */}
-          <div>
-            <h1>Text loader</h1>
+        {/* Skeleton Loader Section */}
+        <section className="section">
+          <h2 className="section-title">Skeleton Loaders</h2>
+          <div className="skeleton-container">
+            <Skeleton variant="text" />
+            <Skeleton variant="text" width="60%" />
+            <div className="skeleton-profile">
+              <Skeleton variant="circle" width={40} height={40} />
+              <div className="skeleton-content">
+                <Skeleton variant="text" />
+                <Skeleton variant="text" width="60%" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Text Loader Section */}
+        <section className="section">
+          <h2 className="section-title">Text Loader</h2>
+          <div className="text-loader-container">
             <TextLoader text="Loading" />
           </div>
-        </div>
+        </section>
+
+        {/* Interactive Components Section */}
+        <section className="section">
+          <h2 className="section-title">Interactive Components</h2>
+
+          <div className="interactive-grid">
+            {/* Modal Demo */}
+            <div className="interactive-item">
+              <h3 className="component-title">Modal Dialog</h3>
+              <button className="demo-button" onClick={() => setIsModalOpen(true)}>
+                Open Modal
+              </button>
+              
+              <Modal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                title="Example Modal"
+                footer={
+                  <button 
+                    className="modal-button"
+                    onClick={() => setIsModalOpen(false)}
+                  >
+                    Close
+                  </button>
+                }
+              >
+                <p>This is an example modal with customizable content and footer. You can add any content here!</p>
+              </Modal>
+            </div>
+
+            {/* Tooltip Demo */}
+            <div className="interactive-item">
+              <h3 className="component-title">Tooltip</h3>
+              <div className="tooltip-demo">
+                <Tooltip content="This is a helpful tooltip!" position="top">
+                  <button className="demo-button">
+                    Hover me
+                  </button>
+                </Tooltip>
+              </div>
+            </div>
+
+            {/* Snackbar Demo */}
+            <div className="interactive-item">
+              <h3 className="component-title">Snackbar</h3>
+              <button 
+                className="demo-button"
+                onClick={() => setIsSnackbarOpen(true)}
+              >
+                Show Snackbar
+              </button>
+              <Snackbar
+                isOpen={isSnackbarOpen}
+                message="This is a snackbar notification!"
+                variant="default"
+                autoHideDuration={1000}
+                onClose={() => setIsSnackbarOpen(false)}
+                action={{
+                  label: "Undo",
+                  onClick: () => setIsSnackbarOpen(false)
+                }}
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
+  </div>
   );
 }
 
