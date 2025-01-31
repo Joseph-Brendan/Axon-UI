@@ -1,0 +1,24 @@
+.CheckBox{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+    }
+
+.CheckBox input {
+    margin-left: .5rem;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+  }
+  
+  .CheckBox label {
+    font-size: 1rem;
+  }
