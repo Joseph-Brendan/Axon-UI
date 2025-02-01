@@ -1,0 +1,86 @@
+.radioOption{
+    color: var(--text-primary-black);
+    font-size: var(--subtitle-3-font-size);
+    font-weight: var(--font-weight-medium);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    
+}
+.radioLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;    
+}
+  
+.radioInput {
+  display: none;
+}
+  
+.radioWrapper {
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--icon-default-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+    
+}
+
+ 
+.radioDiv {
+    width: 8px;
+    height: 8px;
+    background-color: var(--icon-default-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.radioChecked {
+    border-color: var(--icon-default-color);
+}
+
+.radioChecked .radioDiv {
+    opacity: 1;
+}
+
+.radioWrapper:focus-within {
+    box-shadow: 0 0 5px var(--checkbox-hover);
+}
+
+.radioWrapper:hover {
+    border-color: var(--checkbox-hover);
+}
+
+.radioChecked:hover {
+    background-color: var(--checkbox-hover);
+}
+
+.radioChecked:focus-within {
+    background-color: var(--checkbox-focused);
+}
+
+.radioWrapper:focus-within {
+    box-shadow: var(--checkbox-focused);
+}
+
+.radioDisabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.radioChecked.radioDisabled {
+    border-color: var(--icon-disabled-color);
+    background-color: var(--icon-disabled-color);
+}
+
+.radioChecked.radioDisabled .radioDiv {
+    background-color: var(--icon-disabled-color);
+}
