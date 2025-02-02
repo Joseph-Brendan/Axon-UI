@@ -11,7 +11,7 @@
     width: 100%;
     height: 4px;
     background-color: var(--disabled-bg);
-    border-radius: 2px;
+    border-radius: 1rem;
     overflow: hidden;
   }
   
@@ -64,8 +64,8 @@
   }
   
   /* Circular Indeterminate */
-  .indeterminate {
-    width: 40px;
+  .intermediate {
+    width: 50px;
     height: 40px;
     border: 3px solid var(--border-light);
     border-top: 3px solid var(--info-state);
@@ -74,15 +74,16 @@
   }
   
   /* Linear Indeterminate */
-  .linearIndeterminate {
+  .linearIntermediate {
     width: 100%;
     height: 4px;
     background-color: var(--disabled-bg);
     overflow: hidden;
+    border-radius: 1rem;
     position: relative;
   }
   
-  .linearIndeterminateBar {
+  .linearIntermediateBar {
     width: 30%;
     height: 100%;
     background-color: var(--info-state);

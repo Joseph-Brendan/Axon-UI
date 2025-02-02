@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Modal from "./Feedback component/Modal/Modal";
 import Snackbar from "./Feedback component/Snackbar/Snackbar";
 import Tooltip from "./Feedback component/Tooltip/Tooltip";
-import "./feedback.css"
-import { Determinate, Intermediate, Skeleton, TextLoader } from "./Feedback component/Loaders/Loaders";
+import "./Feedback component/feedback.css";
+import { DeterminateLoader, IntermediateLoader, SkeletonLoader, TextLoader } from "./Feedback component/Loaders/Loaders";
 
 // import InputField from "./Form-Components/InputField/InputField.jsx";
 
@@ -43,7 +43,7 @@ function App() {
             <div className="loader-item">
               <h3 className="component-title">Linear Determinate Progress</h3>
               <div className="loader-container">
-                <Determinate progress={progress} variant="linear" />
+                <DeterminateLoader progress={progress} />
               </div>
             </div>
 
@@ -51,7 +51,7 @@ function App() {
             <div className="loader-item">
               <h3 className="component-title">Circular Determinate Progress</h3>
               <div className="loader-container">
-                <Determinate progress={progress} variant="circular" />
+                <DeterminateLoader progress={progress} variant="circular"/>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ function App() {
             <div className="loader-item">
               <h3 className="component-title">Linear Indeterminate</h3>
               <div className="loader-container">
-                <Intermediate variant="linear" />
+                <IntermediateLoader variant="linear"/>
               </div>
             </div>
 
@@ -67,7 +67,7 @@ function App() {
             <div className="loader-item">
               <h3 className="component-title">Circular Indeterminate</h3>
               <div className="loader-container">
-                <Intermediate variant="circular" />
+                <IntermediateLoader />
               </div>
             </div>
           </div>
@@ -77,13 +77,13 @@ function App() {
         <section className="section">
           <h2 className="section-title">Skeleton Loaders</h2>
           <div className="skeleton-container">
-            <Skeleton variant="text" />
-            <Skeleton variant="text" width="60%" />
+            <SkeletonLoader variant="text" />
+            <SkeletonLoader variant="text" width="60%" />
             <div className="skeleton-profile">
-              <Skeleton variant="circle" width={40} height={40} />
+              <SkeletonLoader variant="circle" width= '40' height= '40' />
               <div className="skeleton-content">
-                <Skeleton variant="text" />
-                <Skeleton variant="text" width="60%" />
+                <SkeletonLoader variant="text" />
+                <SkeletonLoader variant="text" width="60%" />
               </div>
             </div>
           </div>
@@ -112,7 +112,6 @@ function App() {
               <Modal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                title="Example Modal"
                 footer={
                   <button 
                     className="modal-button"
@@ -149,12 +148,10 @@ function App() {
               </button>
               <Snackbar
                 isOpen={isSnackbarOpen}
-                message="This is a snackbar notification!"
-                variant="default"
                 autoHideDuration={1000}
                 onClose={() => setIsSnackbarOpen(false)}
                 action={{
-                  label: "Undo",
+                  label: "Dismiss",
                   onClick: () => setIsSnackbarOpen(false)
                 }}
               />
