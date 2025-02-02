@@ -1,0 +1,171 @@
+/* Linear Determinate */
+.determinateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .determinateBackground {
+    width: 100%;
+    height: 4px;
+    background-color: var(--disabled-bg);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .determinateBar {
+    height: 100%;
+    background-color: var(--info-state);
+    transition: width 0.3s ease;
+  }
+  
+  .determinateLabel {
+    font-size: 0.875rem;
+    color: var(--text-primary-black);
+  }
+  
+  /* Circular Determinate */
+  .circularContainer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circularProgress {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circularBackground {
+    fill: none;
+    stroke: var(--disabled-bg);
+    stroke-width: 8;
+  }
+  
+  .circularBar {
+    fill: none;
+    stroke: var(--info-state);
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s ease;
+  }
+  
+  .circularLabel {
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary-black);
+  }
+  
+  /* Circular Indeterminate */
+  .intermediate {
+    width: 50px;
+    height: 40px;
+    border: 3px solid var(--border-light);
+    border-top: 3px solid var(--info-state);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Linear Indeterminate */
+  .linearIntermediate {
+    width: 100%;
+    height: 4px;
+    background-color: var(--disabled-bg);
+    overflow: hidden;
+    border-radius: 1rem;
+    position: relative;
+  }
+  
+  .linearIntermediateBar {
+    width: 30%;
+    height: 100%;
+    background-color: var(--info-state);
+    position: absolute;
+    animation: linearProgress 1.5s ease-in-out infinite;
+  }
+  
+  /* Skeleton */
+  .skeleton {
+    background: var(--disabled-bg);
+    border-radius: 4px;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  .skeletonText {
+    height: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .skeletonCircle {
+    width: 40px;
+    height: 40px;
+    margin: 1rem 0 1rem 0;
+    border-radius: 50%;
+  }
+  
+  .skeletonRect {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Text Loader */
+  .textLoader {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--text-primary-black);
+  }
+  
+  .dots {
+    display: inline-flex;
+    margin-left: 4px;
+  }
+  
+  .dot {
+    width: 4px;
+    height: 4px;
+    margin: 0 2px;
+    background-color: currentColor;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+  }
+  
+  .dot:nth-child(1) { animation-delay: -0.32s; }
+  .dot:nth-child(2) { animation-delay: -0.16s; }
+  
+  /* Animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+@keyframes linearProgress {
+    0% {
+      left: -30%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: -30%;
+    }
+}
+  
+/* Skeleton Loader Animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+  
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}

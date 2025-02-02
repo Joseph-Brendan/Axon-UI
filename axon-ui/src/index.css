@@ -27,7 +27,7 @@
   --button-secondary-text: #1e1f20;
   --text-primary-black: #25292e;
   --text-secondary-black: #79818b;
-  --sutface-primary: #fff;
+  --surface-primary: #fff;
   --button-text-secondary: #3f3f42;
 
   --disabled-label-text: #f7f8f9;
@@ -47,6 +47,9 @@
   --warning-state: #ffc233;
   --warning-primary-container: #fff7e6;
   --warning-in-primary-container: #8c6200;
+  --info-state: #007bff;
+  --info-primary-container: #a7d3ff;
+  --info-in-primary-container: #0351a0;
 
   --icon-default-color: #3e454e;
   --icon-hover-color: #79818b;
