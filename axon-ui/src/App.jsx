@@ -1,22 +1,13 @@
 // import NavBarComp1 from "./Navigation-Components/NavBar/NavBar1-Components/NavBar1.jsx";
 
-//import InputField from "./Form-Components/InputField/InputField";
-import DropDown from "./Form-Components/Dropdown/DropDown";
+import InputField from "./Form-Components/InputField/InputField"
+import CheckBox from "./Form-Components/CheckBox.jsx";
+import DropDown from "./Form-Components/Dropdown/DropDown.jsx";
 import FieldLabel from "./Form-Components/InputField/FieldLabel"
 
 function App() {
 
-  const options = [
-    "Placeholder",
-    "Placeholder",
-    "Placeholder",
-    "Placeholder",
-    "Placeholder"
-  ]
 
-  const handleChange = ()=> {
-    console.log("Selected:, options")
-  }
   return (
     <div>
       {/* <NavBarComp1 
@@ -24,7 +15,8 @@ function App() {
         /> */}
       {/* <InputField /> */}
       
-      <DropDown placeholder="Input text" label="label" options={options} onChange={handleChange}/>
+      <DropDown />
+      
     </div>
   );
 }
