@@ -1,0 +1,49 @@
+.fileUploadContainer {
+  width: 100%;
+  border: 2px dashed var(--border-medium);
+  border-radius: var(--radius-m);
+  padding: var(--spacing-xl);
+  text-align: center;
+  cursor: pointer;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.stateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.dragText {
+  color: var(--text-primary-black);
+  font-size: var(--subtitle-2-font-size);
+  margin: var(--spacing-xs) 0;
+}
+
+.maxSize {
+  color: var(--text-secondary-black);
+  font-size: var(--caption1-font-size);
+  margin-bottom: var(--spacing-md);
+}
+
+.browseButton {
+  background: var(--button-secondary-bg);
+  color: var(--button-text-secondary);
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-xl);
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  font-size: var(--button-S-font-size);
+}
+
+.browseButton:hover {
+  background: var(--button-secondary-hover-bg);
+}
+
+.uploadingState, .completedState {
+  width: 100%;
+} 
