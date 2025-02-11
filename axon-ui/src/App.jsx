@@ -2,6 +2,7 @@
 
 import InputField from "./Form-Components/InputField/InputField";
 import RadioGroup from "./Form-Components/RadioInput/RadioGroup";
+import ToggleGroup from "./Form-Components/ToggleInput/ToggleGroup";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         /> */}
       <InputField />
       <RadioGroup/>
+      <ToggleGroup/>
     </div>
   );
 }
