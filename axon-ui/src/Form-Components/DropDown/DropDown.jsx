@@ -1,4 +1,5 @@
 import DropdownMenu from "./DropDownMenu"
+import { User, CircleCheck} from "lucide-react"
 
 
 export default function DropDown(){
@@ -16,7 +17,15 @@ export default function DropDown(){
 
     return(
         <div>
-            <DropdownMenu placeholder="Input text" label="label" options={options} onChange={handleChange}/>
+            <DropdownMenu 
+            label="label" 
+            placeholder="Input text"  
+            options={options} 
+            onChange={handleChange}
+            showIcons={true}
+            customUserIcon={User}
+            customCheckIcon={CircleCheck}
+            />
         </div>
     )
 }
