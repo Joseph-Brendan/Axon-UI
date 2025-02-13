@@ -89,12 +89,12 @@
 .userIcon {
   width: 1rem;
   height: 1rem;
-  color: var(--input-placeholder);
+  color: var(--text-primary-black);
 }
 
 .checkIcon {
   width: 1rem;
   height: 1rem;
-  color: var(--input-placeholder);
+  color: var(--text-primary-black);
 }
 
